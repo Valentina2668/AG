@@ -1,0 +1,225 @@
+@import 'variable.scss';
+
+.header {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    max-height: 50px;
+}
+
+.center-block {
+    display: flex;
+
+
+    .menu {
+        width: 300px;
+
+        .menu-fly {
+            position: fixed;
+
+            .menu-group {
+                .links-wrap {
+                    display: none;
+                    position: fixed;
+
+                    .links{
+                        background-color: wheat;
+                        position: relative;
+                        left: $menu-link-width;
+                    }
+                }
+
+                &:hover {
+                    .links-wrap {
+                        display: block;
+                    }
+                }
+
+            }
+
+
+            .link-container {
+                margin: 5px;
+                display: flex;
+                width: $menu-link-width;
+
+                a {
+                    display: flex;
+                    align-items: center;
+
+                    &:hover {
+                        width: 100%;
+                    }
+
+                    &.active {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+
+    .content {
+        flex: 1;
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+
+            .bike-container {
+                border: 1px $border-bike-color solid;
+                border-radius: 15px;
+                width: 500px;
+                height: $bike-container-height;
+
+                display: flex;
+                flex-direction: column;
+
+                margin: 5px;
+
+                .name {
+                    border-bottom: 1px $border-bike-color solid;
+                    font-size: 20px;
+                    display: flex;
+                    justify-content: center;
+                    padding: 5px;
+
+                    &:hover {
+                        background-color: aqua;
+                    }
+                }
+            }
+        }
+
+        .hot-key-block-wrap {
+            flex: 1;
+
+            .hot-key-block {
+                display: flex;
+                border-bottom: 1px $secondary-background-color solid;
+
+                &:hover {
+                    background-color: $primary-background-color;
+                }
+
+                .desc {
+                    justify-content: start;
+                }
+
+                .hot-key {
+                    color: $highlight-color;
+                    margin: 5px;
+                    font-size: 30px;
+                    width: 200px;
+                }
+
+                .tags {
+                    display: flex;
+
+                    .tag {
+                        border: 5px solid;
+                        border-radius: 17px;
+                        padding: 5px;
+                        display: flex;
+                        align-items: center;
+                        font-weight: bold;
+
+                        &.vsc {
+                            border-color: aquamarine;
+                        }
+
+                        &.chrome {
+                            border-color: rgb(24, 2, 220);
+                        }
+
+                        &.windows {
+                            border-color: rgb(195, 110, 5);
+                        }
+                    }
+                }
+            }
+        }
+
+        .page {
+            display: none;
+            // background-color: blue;
+
+            &:target {
+                display: flex;
+                // background-color: chocolate;
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+.image-and-desc {
+    display: flex;
+    flex: 1;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px $border-bike-color solid;
+    flex: 1;
+}
+
+.image-container img {
+    max-width: 250px;
+    max-height: calc($bike-container-height - 35px - 25px);
+}
+
+.additional-container {
+    display: flex;
+    border-top: 1px $border-bike-color solid;
+}
+
+.additional-container .action {
+    flex: 1;
+    background-color: pink;
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+}
+
+.additional-container .action:first-child {
+    border-bottom-left-radius: 15px;
+    background-color: aqua;
+}
+
+.additional-container .action:last-child {
+    border-bottom-right-radius: 15px;
+    background-color: aqua;
+}
+
+.desc {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.footer {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    color: rgba(185, 188, 179, 0.863);
+}
+
+
+
+
+.main {
+    font-size: 30px;
+}
