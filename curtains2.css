@@ -1,0 +1,31 @@
+.cutrains {
+    background-image: url(images/buildinter.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    width: 600px;
+    height: 500px;
+    overflow: hidden;
+}
+.left-curtain {
+    display: flex;
+    width: 300px;
+    height: 500px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    position: relative;
+}
+.left-curtain img {
+    width: 100%;
+    height: 100%;
+}
+.right-curtain {
+    display: flex;
+    width: 300px;
+    height: 500px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    position: relative;
+}
+.right-curtain img {
+    width: 100%;
+    height: 100%;
+}
