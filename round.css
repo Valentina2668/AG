@@ -1,0 +1,53 @@
+.round {
+    border-radius: 70px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.curcle_0 {
+    z-index: 50;
+    background-color: rgb(2, 58, 58);
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    width: 100px;
+    height: 100px;
+}
+.curcle_1 {
+    z-index: 40;
+    background-color: rgb(2, 100, 98);
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 140px;
+    left: 200px;
+}
+.curcle_2 {
+    z-index: 30;
+    background-color: rgb(3, 174, 172);
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 133px;
+    left: 240px;
+}
+.curcle_3 {
+    z-index: 20;
+    background-color: rgb(4, 210, 206);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 130px;
+    left: 280px;
+}
+.curcle_4 {
+    z-index: 10;
+    background-color: rgb(3, 253, 249);
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 129px;
+    left: 320px;
+}
